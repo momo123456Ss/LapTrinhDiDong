@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello 123</string>
+    <string name="done">Done</string>
+    <string name="reminder">Reminder Name</string>
+    <string name="hello_word">hello_word</string>
+
+</resources>

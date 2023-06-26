@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Phần mền báo toán "
+        android:textColor="@color/black"
+        android:textSize="16sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi của bạn 1 "
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+
+        <EditText
+            android:id="@+id/edt_Sotuoi1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_edt"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#FFFB">
+
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi của bạn 2 "
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+
+        <EditText
+            android:id="@+id/edt_Sotuoi2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_edt"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#FFFB">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_TinhToan"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_edt"
+        android:gravity="center"
+        android:text="Tính toán ngay"></Button>
+
+    <TextView
+        android:id="@+id/txt_nhanxet1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="Nhận xét"
+        android:textSize="34dp"></TextView>
+
+    <TextView
+        android:id="@+id/txt_nhanxet2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="Nhận xét"
+        android:textSize="24dp"></TextView>
+
+    <TextView
+        android:id="@+id/txt_nhanxet3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="94dp"
+        android:text="Nhận xét"
+        android:textSize="24dp"></TextView>
+</LinearLayout>
