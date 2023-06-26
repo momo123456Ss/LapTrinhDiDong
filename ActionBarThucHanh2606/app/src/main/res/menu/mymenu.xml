@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.simpleactionbar.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_searchv4"
+        android:title="Search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="ifRoom"
+        android:title="Refresh"/>
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction = "never"
+        android:title="Help" />
+    <item
+        android:id="@+id/sub_activity1"
+        android:title="Sub Activity 1" />
+    <item
+        android:id="@+id/sub_activity2"
+        android:title="Sub Activity 2"/>
+
+</menu>
