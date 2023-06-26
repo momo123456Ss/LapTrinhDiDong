@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Hello 123</string>
+    <string name="done">Done</string>
+    <string name="hello_word">hello_word</string>
+    <string name="reminder">Reminder Name</string>
+    <style name="Base.Theme.HelloWorld" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.HelloWorld" parent="Base.Theme.HelloWorld"/>
+</resources>

@@ -2,12 +2,13 @@ package com.example.maytinhdongian;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.ConditionVariable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         tvInput = findViewById(R.id.tv_input);
         tvResult = findViewById(R.id.tv_result);
         //----
+        tvInput.setText("");
+        tvResult.setText("");
         btn_clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 process = tvInput.getText().toString();
-                tvInput.setText(process + "4");
+                tvInput.setText(process + "3");
             }
         });
         btn_4.setOnClickListener(new View.OnClickListener() {
@@ -102,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 process = tvInput.getText().toString();
-                tvInput.setText(process + "7");
+                tvInput.setText(process + "6");
             }
         });
         btn_7.setOnClickListener(new View.OnClickListener() {
@@ -175,6 +178,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        btn_dot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    process = tvInput.getText().toString();
+                    tvInput.setText(process + ".");
+            }
+        });
         btn_result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -183,6 +194,15 @@ public class MainActivity extends AppCompatActivity {
                 process = process.replaceAll("%","/100");
                 process = process.replaceAll(":","/");
                 Context rhiho = Context.enter();
+                rhiho.setOptimizationLevel(-1);
+                Object finalResult = "";
+                try{
+                    Scriptable scriptable  = rhiho.initSafeStandardObjects();
+                    finalResult = rhiho.evaluateString(scriptable,process,"javascript",1,null);
+                }catch (Exception e){
+                    finalResult = "0";
+                }
+                tvResult.setText(finalResult.toString());
             }
         });
     }

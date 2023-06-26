@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnNews
+id btnScience
+id btnSports
+id fragmentContainerView
+id textView
+id textView3
+layout activity_main
+layout fragment_news
+layout fragment_science
+layout fragment_sports
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string hello_blank_fragment
+style Base.Theme.MyApplication
+style Theme.MyApplication
+xml backup_rules
+xml data_extraction_rules
