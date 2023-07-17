@@ -13,6 +13,9 @@ public class StudentAdapter extends BaseAdapter {
     Context context;
     List<Student> lst;
     LayoutInflater inflater;
+    public StudentAdapter(){
+
+    }
     public StudentAdapter(Context appContext, List<Student> lstStudent) {
         this.context = appContext;
         this.lst = lstStudent;

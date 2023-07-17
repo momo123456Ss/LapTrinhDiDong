@@ -22,7 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="34dp"
-            android:hint="ID"/>
+            android:hint="ID"
+            android:enabled="false"/>
 
         <EditText
             android:id="@+id/edt_name"
@@ -52,8 +53,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ADD"
-            android:id="@+id/btn_ADD"/>
+            android:text="UPD"
+            android:id="@+id/btn_UPD"/>
     </LinearLayout>
 
 </LinearLayout>

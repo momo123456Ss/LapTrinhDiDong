@@ -26,16 +26,11 @@
             android:text="ADD"
             android:layout_marginRight="10dp"
             android:id="@+id/btn_themsv"/>
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UPD"
-            android:layout_marginRight="10dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DEL"
-            android:layout_marginRight="10dp"/>
+            android:text="Nhấn giữ để xóa - sửa"
+            android:textSize="34dp"/>
     </LinearLayout>
 
     <ListView
